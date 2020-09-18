@@ -12,4 +12,4 @@ RUN  apt-get update \
   && echo "\n[mysqld]\nssl-ca=/tmp/ca.pem\nssl-cert=/tmp/server-cert.pem\nssl-key=/tmp/server-key.pem\n" >> /etc/mysql/my.cnf \
   # install additional python modules
   && pip install --upgrade pip setuptools six && \
-  pip install --no-cache-dir -r requirements.txt
+  pip install --no-cache-dir -r requirements.txt && pip install azure-cognitiveservices-speech
